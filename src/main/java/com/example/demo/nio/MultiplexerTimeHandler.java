@@ -13,9 +13,9 @@ import java.util.Set;
 /**
  * 选择器(多路复用器)处理类
  * SelectionKey.isValid();
- * SelectionKey.isAcceptable();
- * SelectionKey.isReadable();
- * SelectionKey.isConnectable();
+ * SelectionKey.isAcceptable();     注册OP_ACCEPT 后有机会监听到
+ * SelectionKey.isReadable();       注册OP_READ 后有机会监听到
+ * SelectionKey.isConnectable();    注册OP_CONNECT 后有机会监听到
  */
 public class MultiplexerTimeHandler implements Runnable {
 
